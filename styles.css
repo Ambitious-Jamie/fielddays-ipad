@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-main {
+  flex-grow: 1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+    background-color: #ffffff;
+}
+/* variables */
+:root {
+  --main-white-color: #fff;
+  --main-green-color: #9e89b8;
+}
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+  background: var(--main-white-color) url(IMG_SRC) no-repeat center / cover;
+  background-blend-mode: luminosity;
+  color: var(--main-green-color);
+}
+/* container */
+.three-columns {
+    display:flex;
+}
+.three-columns a {display: block;}
+/* columns */
+.three-columns > * {
+    width:calc(100% / 3);
+    padding:1rem;
+}
+
+img {
+    width: 100%;
+}
